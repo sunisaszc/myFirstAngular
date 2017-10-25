@@ -25,16 +25,16 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
 
-    this.my_name = "Kim Taeyeon";
-    this.age = 28;
+    this.my_name = "Sunisa Saejun";
+    this.age = 21;
     this.email = "fern14061@gmail.com";
     this.address = {
-      street: "Seoul",
-      city: "Dindeang",
+      street: "Sukumvit 101/1",
+      city: "Bangna",
       province: "Bangkok",
-      postcode: "10400"
+      postcode: "10260"
     }
-    this.skills = ["Singing", "Dancing"];
+    this.skills = ["Sleeping", "Eating"];
 
     this.getphotoService.getPhotoList().subscribe((response) => {
       this.photoList = response;

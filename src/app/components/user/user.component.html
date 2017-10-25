@@ -10,13 +10,6 @@
     <b>Address:</b> {{address.street}}, {{address.city}}, {{address.province}}, {{address.postcode}}</li>
 </ul>
 
-<h2>Photo List</h2>
-<ul>
-  <li style="list-style-type: none" *ngFor="let photo of photoList;"><img src="{{photo.thumbnailUrl}}"> <br> {{photo.title}}</li>
-</ul>
-
-
-
 <h2>Edit Profile</h2>
 
 <button (click)=toggleEdit()>Edit</button>
@@ -58,4 +51,9 @@
   <li style="list-style-type: none" *ngFor="let skill of skills; let i = index">
     {{i+1}}.{{skill}} <button (click)="removeSkill(skill)">X</button>
   </li>
+</ul>
+
+<h2>Photo List</h2>
+<ul>
+  <li style="list-style-type: none" *ngFor="let photo of photoList;"><img src="{{photo.thumbnailUrl}}"> <br> {{photo.title}}</li>
 </ul>

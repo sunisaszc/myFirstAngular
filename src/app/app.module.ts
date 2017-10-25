@@ -8,17 +8,20 @@ import { FormsModule } from '@angular/forms';
 import { GetphotoService } from './services/getphoto.service';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { KpopComponent } from './components/kpop/kpop.component';
 
 const appRoutes: Routes = [
   {path: "",component: UserComponent},
-  {path:"about",component:AboutusComponent}
+  {path:"aboutme",component:AboutusComponent},
+  {path:"Fav-kpop",component:KpopComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    AboutusComponent
+    AboutusComponent,
+    KpopComponent
   ],
   imports: [
     BrowserModule,
